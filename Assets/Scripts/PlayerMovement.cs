@@ -15,8 +15,7 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         _cam = GameObject.Find("Main Camera").GetComponent<Camera>(); //it will set Camera component in obj camera to _cam
-        _floorCollider =
-            GameObject.Find("Floor").GetComponent<Collider>(); // it will set collider of floor to the variable
+        _floorCollider = GameObject.Find("Floor").GetComponent<Collider>(); // it will set collider of floor to the variable
     }
 
     private void Update()
@@ -30,5 +29,6 @@ public class PlayerMovement : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, _hit.point, Time.deltaTime * movementSpeed); // For moving from obj
         transform.LookAt(new Vector3(_hit.point.x, transform.position.y, _hit.point.z));// For direction
 
+        
     }
 }
