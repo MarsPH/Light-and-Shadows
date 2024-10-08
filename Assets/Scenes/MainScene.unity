@@ -5434,6 +5434,7 @@ GameObject:
   - component: {fileID: 822276804}
   - component: {fileID: 822276803}
   - component: {fileID: 822276808}
+  - component: {fileID: 822276809}
   m_Layer: 0
   m_Name: Globe
   m_TagString: Untagged
@@ -5557,6 +5558,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &822276809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822276802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e14698bd759010498cf76862f9ca98b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  globeStartTime: 5
+  globeRepeatIntervals: 5
+  minX: -20
+  maxX: 20
+  minZ: -20
+  maxZ: 20
+  speed: 15
 --- !u!1 &906005361
 GameObject:
   m_ObjectHideFlags: 0
@@ -5805,7 +5825,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60.000004
+  field of view: 30
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -5831,7 +5851,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1124401371}
   serializedVersion: 2
-  m_LocalRotation: {x: -3.052203e-10, y: 0.95709205, z: -0.2897841, w: -0.0000000010080745}
+  m_LocalRotation: {x: -0.000000004081243, y: 0.9570921, z: -0.28978413, w: -0.000000002151362}
   m_LocalPosition: {x: -7.59, y: 10.5, z: 15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6474,7 +6494,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 1284924882}
   m_Lens:
-    FieldOfView: 60.000004
+    FieldOfView: 30
     OrthographicSize: 5
     NearClipPlane: 0.3
     FarClipPlane: 1000
